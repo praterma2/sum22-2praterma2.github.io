@@ -1,0 +1,23 @@
+body{
+    background-color: lightblue;
+}
+
+nav{
+    line-height: 30px;
+    height: 600px;
+    width: 120px;
+    padding: 5px;
+    float: left;
+}
+
+footer{
+    text-align: center;
+}
+
+header{
+    text-align: center;
+}
+
+#objectives{
+    margin-left: 200px;
+}

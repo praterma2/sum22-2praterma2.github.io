@@ -1,0 +1,128 @@
+<!--Html file for CSC102
+    Assignment: Launching your UAT Space Program HTML Document Tags
+    written by Matt Prater
+    email: mprater@uat.edu-->
+<!DOCTYPE html>
+<!--html tag for assignment-->
+<html>
+<!--head tag for assignment-->
+
+<head>
+    <script src="launchDataDis.js"></script>
+    <script src="code.js"></script>
+    <script src="dataLoader.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!--we need to define some variables for our DOM-->
+    <script>
+        var theTime = new Date();
+        var time_interval = 5000;
+        var last_iteration = 0;
+        var running = true;
+        var index = 0
+        var timer;
+        //!!!!!!!!!!!!!!!!!!!!!!!!!! need to figure this out
+        var data = getData();
+
+    </script>
+
+
+    <!--the title goes at the title bar -->
+    <title>
+        Prof. Prater's UAT Space Page
+    </title>
+    <script>
+        //alert function as required by assignment
+        var alertText = "Test of the alert function";
+        //alert(alertText);
+    </script>
+    
+    <!--<style>
+        body {
+            background-color: rebeccapurple;
+            color: white;
+        }
+        
+    </style>-->
+</head>
+<body>
+    <table>
+        <td>
+            <!--logo for UATSpace-->
+            <img src="UATSpaceLogo-1.jpg">
+        </td>
+        <td>
+            <!--fulfils header requirement-->
+            <h1>Welcome to UATSpace</h1>
+        </td>
+    </table>
+    <br>
+    <br>
+    <table id="data" border="2" width="70%">
+        <col style="width: 35%">
+        <col style="width: 35%">
+        <thead>
+            <th><div id="headerStyle">Data Type</div></th>
+            <th><div id="headerStyle">Reading</div></th>
+        </thead>
+        <tbody>
+            <tr id="seconds"></tr>
+            <tr id="latitude"></tr>
+            <tr id="longitude"></tr>
+            <tr id="gpsAltitude"></tr>
+            <tr id="bmpAltitude"></tr>
+            <tr id="bmpPress"></tr>
+            <tr id="bmpTemp"></tr>
+            <tr id="digTemp"></tr>
+            <tr id="cssTemp"></tr>
+            <tr id="cssCO2"></tr>
+            <tr id="cssTVOC"></tr>
+            <tr id="UV"></tr>
+            <tr id="accelX"></tr>
+            <tr id="accelY"></tr>
+            <tr id="accelZ"></tr>
+            <tr id="magneticX"></tr>
+            <tr id="magneticY"></tr>
+            <tr id="magneticZ"></tr>
+            <tr id="gyroX"></tr>
+            <tr id="gyroY"></tr>
+            <tr id="gyroZ"></tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    The current time is: <div id="currentTime">Press start to see the current time</div> 
+    <br>
+    <br>
+    <!--button requirements from assignment-->
+    <button id="startButton" onclick="start();">Start</button>
+    <button id="stopButton" onclick="stop();">Stop</button>
+    <br>
+    <br>
+    Time left before launch:<br>
+    <div id="countdownDisplay">Launch not initiated</div>
+    <br>
+    <br>
+    <h1 id="blink">Craps Game!!!</h1>
+    <script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1500);
+    </script>
+    <h2>please play!</h2>
+    Die 1 result: <div id="die1Res">Play Craps to roll dice</div><br>
+    Die 2 result: <div id="die2Res">Play Craps to roll dice</div><br>
+    <div id="crapsRes">Game Results</div><br>
+    <br>
+    <button onclick="playCraps();">Play Craps</button>
+    <br>
+    <br>
+    Wins<br>
+    <div id="winRes">get some wins</div><br>
+    Losses<br>
+    <div id="loseRes">get some losses</div><br>
+    Tie<br>
+    <div id="tieRes">get some ties</div><br>
+</body>
+
+</html>

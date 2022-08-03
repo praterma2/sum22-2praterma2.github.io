@@ -1,0 +1,25 @@
+#titleText{
+    text-align: center;
+    margin-right: 120px;
+}
+
+body{
+    background: linear-gradient(90deg, white, #2eadc2);
+}
+
+nav{
+    line-height: 30px;
+    height: 600px;
+    width: 120px;
+    padding: 5px;
+    float: left;
+}
+
+footer{
+    text-align: center;
+}
+
+header{
+    text-align: center;
+}
+
